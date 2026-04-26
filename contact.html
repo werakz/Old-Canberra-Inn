@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact The Old Canberra Inn in Lyneham for general enquiries, bookings, functions and venue information.">
+  <title>Contact | The Old Canberra Inn</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,80,1&family=League+Spartan:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" data-header>
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-black.webp" alt="The Old Canberra Inn"></a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+      <div class="nav-menu" data-nav-menu>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="booking.html">Book</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero compact">
+      <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1600&q=85" alt="Warm bar interior with bottles and timber details">
+      <div class="page-hero-copy">
+        <p class="eyebrow">Contact us</p>
+        <h1>Come by, call ahead, or send a note.</h1>
+        <p>For table questions, function enquiries, dietary needs or anything venue-related, the team at The Old Canberra Inn is here to help.</p>
+      </div>
+    </section>
+
+    <section class="container contact-layout">
+      <div class="contact-details">
+        <article>
+          <p class="eyebrow">Find us</p>
+          <h2>195 Mouat Street, Lyneham ACT 2602</h2>
+          <p>Set in Canberra's inner north, close to Dickson, Braddon and the city. Drop in for lunch, dinner, drinks, weekend music or a casual beer garden session.</p>
+          <div class="contact-actions">
+            <a class="button primary" href="https://www.google.com/maps/search/?api=1&query=195+Mouat+Street+Lyneham+ACT+2602" target="_blank" rel="noopener">Get directions</a>
+            <a class="button outline" href="booking.html">Make a booking</a>
+          </div>
+        </article>
+
+        <div class="contact-card-grid">
+          <article class="contact-card">
+            <h3>Phone</h3>
+            <a href="tel:+61261346000">(02) 6134 6000</a>
+          </article>
+          <article class="contact-card">
+            <h3>Email</h3>
+            <a href="mailto:manager@oldcanberrainn.com.au">manager@oldcanberrainn.com.au</a>
+          </article>
+          <article class="contact-card">
+            <h3>Kitchen</h3>
+            <p>Mon-Thu 12pm-9:30pm<br>Fri-Sat 12pm-10pm<br>Sun 12pm-9pm</p>
+          </article>
+          <article class="contact-card">
+            <h3>Bookings</h3>
+            <p>Groups of eight or more can book. Smaller groups are welcome to walk in.</p>
+          </article>
+        </div>
+      </div>
+
+      <form class="contact-form" data-contact-form novalidate>
+        <div class="form-heading">
+          <p class="eyebrow">Send an enquiry</p>
+          <h2>What can we help with?</h2>
+        </div>
+        <label>Full name
+          <input name="name" type="text" autocomplete="name" required>
+        </label>
+        <label>Email
+          <input name="email" type="email" autocomplete="email" required>
+        </label>
+        <label>Enquiry type
+          <select name="topic" required>
+            <option value="">Select one</option>
+            <option>General enquiry</option>
+            <option>Function enquiry</option>
+            <option>Booking question</option>
+            <option>Menu or dietary question</option>
+            <option>Live music or events</option>
+          </select>
+        </label>
+        <label>Message
+          <textarea name="message" rows="6" placeholder="Tell us what you need" required></textarea>
+        </label>
+        <button class="button primary" type="submit">Send message</button>
+        <p class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="map-panel" aria-label="Map location">
+      <div class="container">
+        <iframe
+          title="Map showing The Old Canberra Inn, 195 Mouat Street, Lyneham ACT"
+          src="https://www.google.com/maps?q=195%20Mouat%20Street%20Lyneham%20ACT%202602&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-marquee" aria-hidden="true">The Old Canberra Inn · Since 1857 · Craft Beer · Live Music ·</div>
+    <div class="container footer-grid">
+      <div class="footer-lead">
+        <a class="brand footer-brand" href="index.html"><img class="brand-logo" src="assets/logo.webp" alt="The Old Canberra Inn"></a>
+      </div>
+      <div class="footer-column"><h3>Explore</h3><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="events.html">Events</a><a href="booking.html">Bookings</a></div>
+      <div class="footer-column"><h3>Visit</h3><p>195 Mouat Street<br>Lyneham ACT 2602</p><a href="https://www.google.com/maps/search/?api=1&query=195+Mouat+Street+Lyneham+ACT+2602" target="_blank" rel="noopener">Get directions</a></div>
+      <div class="footer-column"><h3>Contact</h3><a href="tel:+61261346000">(02) 6134 6000</a><a href="mailto:manager@oldcanberrainn.com.au">manager@oldcanberrainn.com.au</a><p>Kitchen open daily from 12pm.</p></div>
+      <div class="footer-column footer-social" aria-label="Social links"><h3>Social</h3><a class="social-icon" href="https://www.instagram.com/theoldcanberrainn" target="_blank" rel="noopener" aria-label="The Old Canberra Inn on Instagram"><img src="assets/instagram.svg" alt=""></a><a class="social-icon" href="https://www.facebook.com/theoldcanberrainn" target="_blank" rel="noopener" aria-label="The Old Canberra Inn on Facebook"><img src="assets/facebook.svg" alt=""></a></div>
+    </div>
+  </footer>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
