@@ -15,8 +15,14 @@
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header" data-header>
     <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-black.webp" alt="The Old Canberra Inn"></a>
-      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+      <a class="brand" href="index.html" aria-label="The Old Canberra Inn home">
+        <img class="brand-logo" src="assets/logo-black.webp" alt="The Old Canberra Inn">
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
       <div class="nav-menu" data-nav-menu>
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
@@ -28,6 +34,7 @@
   </header>
 
   <main id="main">
+    <!-- Booking hero sets expectations before visitors reach the form. -->
     <section class="booking-hero">
       <div class="booking-copy">
         <p class="eyebrow">Bookings</p>
@@ -37,6 +44,7 @@
       <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1100&q=85" alt="Friends sharing drinks around a restaurant table">
     </section>
 
+    <!-- Booking form pairs required details with practical venue notes. -->
     <section class="container booking-layout">
       <form class="booking-form" data-booking-form novalidate>
         <div class="form-heading">
@@ -93,7 +101,6 @@
           <li>Bookings are for groups of eight or more.</li>
           <li>Smaller groups can walk in; over 100 seats are usually left unbooked.</li>
           <li>For urgent changes, call <a href="tel:+61261346000">(02) 6134 6000</a>.</li>
-         
         </ul>
         <div class="hours-card">
           <h3>Kitchen hours</h3>
@@ -107,12 +114,37 @@
     <div class="footer-marquee" aria-hidden="true">The Old Canberra Inn · Since 1857 · Craft Beer · Live Music ·</div>
     <div class="container footer-grid">
       <div class="footer-lead">
-        <a class="brand footer-brand" href="index.html"><img class="brand-logo" src="assets/logo.webp" alt="The Old Canberra Inn"></a>
+        <a class="brand footer-brand" href="index.html">
+          <img class="brand-logo" src="assets/logo.webp" alt="The Old Canberra Inn">
+        </a>
       </div>
-      <div class="footer-column"><h3>Explore</h3><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="events.html">Events</a><a href="contact.html">Contact</a></div>
-      <div class="footer-column"><h3>Visit</h3><p>195 Mouat Street<br>Lyneham ACT 2602</p><a href="https://www.google.com/maps/search/?api=1&query=195+Mouat+Street+Lyneham+ACT+2602" target="_blank" rel="noopener">Get directions</a></div>
-      <div class="footer-column"><h3>Contact</h3><a href="tel:+61261346000">(02) 6134 6000</a><a href="mailto:manager@oldcanberrainn.com.au">manager@oldcanberrainn.com.au</a><p>Groups of eight or more can book ahead.</p></div>
-      <div class="footer-column footer-social" aria-label="Social links"><h3>Social</h3><a class="social-icon" href="https://www.instagram.com/theoldcanberrainn" target="_blank" rel="noopener" aria-label="The Old Canberra Inn on Instagram"><img src="assets/instagram.svg" alt=""></a><a class="social-icon" href="https://www.facebook.com/theoldcanberrainn" target="_blank" rel="noopener" aria-label="The Old Canberra Inn on Facebook"><img src="assets/facebook.svg" alt=""></a></div>
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-column">
+        <h3>Visit</h3>
+        <p>195 Mouat Street<br>Lyneham ACT 2602</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=195+Mouat+Street+Lyneham+ACT+2602" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <a href="tel:+61261346000">(02) 6134 6000</a>
+        <a href="mailto:manager@oldcanberrainn.com.au">manager@oldcanberrainn.com.au</a>
+        <p>Groups of eight or more can book ahead.</p>
+      </div>
+      <div class="footer-column footer-social" aria-label="Social links">
+        <h3>Social</h3>
+        <a class="social-icon" href="https://www.instagram.com/theoldcanberrainn" target="_blank" rel="noopener" aria-label="The Old Canberra Inn on Instagram">
+          <img src="assets/instagram.svg" alt="">
+        </a>
+        <a class="social-icon" href="https://www.facebook.com/theoldcanberrainn" target="_blank" rel="noopener" aria-label="The Old Canberra Inn on Facebook">
+          <img src="assets/facebook.svg" alt="">
+        </a>
+      </div>
     </div>
   </footer>
   <script src="assets/js/script.js"></script>

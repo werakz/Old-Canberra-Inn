@@ -1,3 +1,4 @@
+/* Design tokens keep the historic pub palette, typography and spacing consistent site-wide. */
 :root {
   --ink: #211915;
   --muted: #6f6258;
@@ -17,6 +18,7 @@
   --font-ui: "League Spartan", Arial, Helvetica, sans-serif;
 }
 
+/* Base reset and shared document defaults. */
 * {
   box-sizing: border-box;
 }
@@ -50,6 +52,7 @@ textarea {
   font: inherit;
 }
 
+/* Keyboard users can jump past the repeated navigation on every page. */
 .skip-link {
   position: absolute;
   left: 1rem;
@@ -69,6 +72,7 @@ textarea {
   margin-inline: auto;
 }
 
+/* Header and primary navigation. */
 .site-header {
   position: sticky;
   top: 0;
@@ -155,6 +159,7 @@ textarea {
   background: var(--paper-strong);
 }
 
+/* Home page hero and shared editorial type styles. */
 .hero {
   min-height: calc(100vh - 72px);
   position: relative;
@@ -251,6 +256,7 @@ h3 {
   margin-top: 1.6rem;
 }
 
+/* Reusable buttons and visible focus treatments. */
 .button {
   display: inline-flex;
   align-items: center;
@@ -297,6 +303,7 @@ h3 {
   background: transparent;
 }
 
+/* Home page content sections. */
 .intro-band,
 .reviews,
 .function-section {
@@ -433,6 +440,7 @@ h3 {
   transform: scale(1.05);
 }
 
+/* Review cards are toggled by the small slider controller in script.js. */
 .review-slider {
   position: relative;
   min-height: 280px;
@@ -480,6 +488,7 @@ h3 {
   cursor: pointer;
 }
 
+/* Newsletter and shared form styling. */
 .newsletter {
   padding: 3rem 0;
   background: var(--paper-strong);
@@ -537,6 +546,7 @@ textarea {
   color: var(--moss);
 }
 
+/* Footer layout and social links. */
 .site-footer {
   padding: 0 0 3rem;
   background: var(--ink);
@@ -649,6 +659,7 @@ textarea {
   filter: invert(7%) sepia(19%) saturate(667%) hue-rotate(334deg) brightness(98%) contrast(95%);
 }
 
+/* Interior page hero sections. */
 .page-hero,
 .booking-hero {
   position: relative;
@@ -678,6 +689,7 @@ textarea {
   color: var(--white);
 }
 
+/* Shared interior page spacing. */
 .menu-layout,
 .booking-layout,
 .event-grid,
@@ -685,6 +697,7 @@ textarea {
   padding: 3rem 0;
 }
 
+/* Menu category filter layout. */
 .menu-tabs {
   display: flex;
   gap: 0.5rem;
@@ -776,6 +789,7 @@ textarea {
   margin-bottom: 0.4rem;
 }
 
+/* Events and function cards. */
 .event-grid {
   display: grid;
   gap: 1rem;
@@ -835,6 +849,7 @@ textarea {
   color: var(--moss);
 }
 
+/* Booking page layout. */
 .booking-hero {
   min-height: auto;
   display: flex;
@@ -893,6 +908,7 @@ textarea {
   background: var(--paper-strong);
 }
 
+/* Contact page layout and embedded map. */
 .contact-layout {
   display: grid;
   gap: 2rem;
@@ -950,6 +966,7 @@ textarea {
   background: var(--paper-strong);
 }
 
+/* Tablet layouts introduce multi-column cards without crowding narrow screens. */
 @media (min-width: 700px) {
   .brand-logo {
     width: 210px;
@@ -1031,6 +1048,7 @@ textarea {
   }
 }
 
+/* Desktop layouts reveal the full navigation and wider editorial compositions. */
 @media (min-width: 980px) {
   .nav-toggle {
     display: none;

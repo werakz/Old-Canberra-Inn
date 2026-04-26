@@ -1,6 +1,7 @@
 const navToggle = document.querySelector("[data-nav-toggle]");
 const navMenu = document.querySelector("[data-nav-menu]");
 
+// Keep the mobile navigation state mirrored for screen readers.
 if (navToggle && navMenu) {
   navToggle.addEventListener("click", () => {
     const isOpen = navMenu.classList.toggle("is-open");
@@ -10,6 +11,8 @@ if (navToggle && navMenu) {
 }
 
 const slider = document.querySelector("[data-slider]");
+
+// The home page review slider loops through a small static quote set.
 if (slider) {
   const cards = Array.from(slider.querySelectorAll(".review-card"));
   const next = slider.querySelector("[data-slider-next]");
@@ -29,6 +32,7 @@ if (slider) {
 const menuButtons = document.querySelectorAll("[data-menu-filter]");
 const menuCategories = document.querySelectorAll("[data-category]");
 
+// Menu filters hide full categories while keeping the source content simple.
 menuButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const filter = button.dataset.menuFilter;
@@ -44,6 +48,8 @@ menuButtons.forEach((button) => {
 });
 
 const newsletter = document.querySelector("[data-newsletter]");
+
+// Static form feedback keeps the experience polished until an email service is connected.
 if (newsletter) {
   newsletter.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -54,6 +60,8 @@ if (newsletter) {
 }
 
 const bookingForm = document.querySelector("[data-booking-form]");
+
+// Booking requests cannot be submitted for past dates or groups under eight.
 if (bookingForm) {
   const dateInput = bookingForm.querySelector('input[name="date"]');
   const today = new Date();
@@ -81,13 +89,15 @@ if (bookingForm) {
       return;
     }
 
-    message.textContent = "Booking was requested, We will snd you a confirmation text once it is confirmed.";
+    message.textContent = "Booking request received. We will send a confirmation text once it is confirmed.";
     bookingForm.reset();
     bookingForm.elements.guests.value = 8;
   });
 }
 
 const contactForm = document.querySelector("[data-contact-form]");
+
+// Contact form validation mirrors the booking form's inline feedback pattern.
 if (contactForm) {
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();

@@ -19,7 +19,9 @@
         <img class="brand-logo" src="assets/logo-black.webp" alt="The Old Canberra Inn">
       </a>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
-        <span></span><span></span><span></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </button>
       <div class="nav-menu" data-nav-menu>
         <a href="index.html" aria-current="page">Home</a>
@@ -32,6 +34,7 @@
   </header>
 
   <main id="main">
+    <!-- Hero introduces the venue promise and primary booking path. -->
     <section class="hero">
       <picture>
         <source media="(min-width: 900px)" srcset="https://images.unsplash.com/photo-1559329007-40df8a9345d8?auto=format&fit=crop&w=1800&q=85">
@@ -48,6 +51,7 @@
       </div>
     </section>
 
+    <!-- Fast venue facts help visitors confirm location, hours and offer. -->
     <section class="intro-band">
       <div class="container intro-grid">
         <article>
@@ -63,6 +67,7 @@
       </div>
     </section>
 
+    <!-- Editorial split sections alternate food and function stories. -->
     <section class="feature-split">
       <div class="feature-image">
         <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1100&q=85" alt="Share plates and pub food arranged on a timber table">
@@ -75,6 +80,7 @@
       </div>
     </section>
 
+    <!-- Visual tiles provide quick paths to the highest-interest venue areas. -->
     <section class="tile-showcase" aria-labelledby="showcase-title">
       <div class="container section-heading">
         <p class="eyebrow">What we are known for</p>
@@ -112,6 +118,7 @@
       </div>
     </section>
 
+    <!-- Rotating testimonials add social proof without needing a large review feed. -->
     <section class="reviews">
       <div class="container">
         <div class="section-heading">
@@ -139,6 +146,7 @@
       </div>
     </section>
 
+    <!-- Newsletter signup is static feedback until an email service is connected. -->
     <section class="newsletter">
       <div class="container newsletter-inner">
         <div>
@@ -165,10 +173,33 @@
           <img class="brand-logo" src="assets/logo.webp" alt="The Old Canberra Inn">
         </a>
       </div>
-      <div class="footer-column"><h3>Explore</h3><a href="menu.html">Menu</a><a href="events.html">Events</a><a href="booking.html">Bookings</a><a href="contact.html">Contact</a></div>
-      <div class="footer-column"><h3>Visit</h3><p>195 Mouat Street<br>Lyneham ACT 2602</p><a href="https://www.google.com/maps/search/?api=1&query=195+Mouat+Street+Lyneham+ACT+2602" target="_blank" rel="noopener">Get directions</a></div>
-      <div class="footer-column"><h3>Contact</h3><a href="tel:+61261346000">(02) 6134 6000</a><a href="mailto:manager@oldcanberrainn.com.au">manager@oldcanberrainn.com.au</a><p>Kitchen open daily from 12pm.</p></div>
-      <div class="footer-column footer-social" aria-label="Social links"><h3>Social</h3><a class="social-icon" href="https://www.instagram.com/theoldcanberrainn" target="_blank" rel="noopener" aria-label="The Old Canberra Inn on Instagram"><img src="assets/instagram.svg" alt=""></a><a class="social-icon" href="https://www.facebook.com/theoldcanberrainn" target="_blank" rel="noopener" aria-label="The Old Canberra Inn on Facebook"><img src="assets/facebook.svg" alt=""></a></div>
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="booking.html">Bookings</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-column">
+        <h3>Visit</h3>
+        <p>195 Mouat Street<br>Lyneham ACT 2602</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=195+Mouat+Street+Lyneham+ACT+2602" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <a href="tel:+61261346000">(02) 6134 6000</a>
+        <a href="mailto:manager@oldcanberrainn.com.au">manager@oldcanberrainn.com.au</a>
+        <p>Kitchen open daily from 12pm.</p>
+      </div>
+      <div class="footer-column footer-social" aria-label="Social links">
+        <h3>Social</h3>
+        <a class="social-icon" href="https://www.instagram.com/theoldcanberrainn" target="_blank" rel="noopener" aria-label="The Old Canberra Inn on Instagram">
+          <img src="assets/instagram.svg" alt="">
+        </a>
+        <a class="social-icon" href="https://www.facebook.com/theoldcanberrainn" target="_blank" rel="noopener" aria-label="The Old Canberra Inn on Facebook">
+          <img src="assets/facebook.svg" alt="">
+        </a>
+      </div>
     </div>
   </footer>
   <script src="assets/js/script.js"></script>

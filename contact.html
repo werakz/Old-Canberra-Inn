@@ -15,8 +15,14 @@
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header" data-header>
     <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-black.webp" alt="The Old Canberra Inn"></a>
-      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+      <a class="brand" href="index.html" aria-label="The Old Canberra Inn home">
+        <img class="brand-logo" src="assets/logo-black.webp" alt="The Old Canberra Inn">
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
       <div class="nav-menu" data-nav-menu>
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
@@ -28,6 +34,7 @@
   </header>
 
   <main id="main">
+    <!-- Contact hero gives visitors the fastest route to help and location details. -->
     <section class="page-hero compact">
       <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1600&q=85" alt="Warm bar interior with bottles and timber details">
       <div class="page-hero-copy">
@@ -37,6 +44,7 @@
       </div>
     </section>
 
+    <!-- Contact details and enquiry form sit side by side on desktop. -->
     <section class="container contact-layout">
       <div class="contact-details">
         <article>
@@ -98,6 +106,7 @@
       </form>
     </section>
 
+    <!-- Embedded map supports wayfinding without taking visitors off the site. -->
     <section class="map-panel" aria-label="Map location">
       <div class="container">
         <iframe
@@ -113,12 +122,37 @@
     <div class="footer-marquee" aria-hidden="true">The Old Canberra Inn · Since 1857 · Craft Beer · Live Music ·</div>
     <div class="container footer-grid">
       <div class="footer-lead">
-        <a class="brand footer-brand" href="index.html"><img class="brand-logo" src="assets/logo.webp" alt="The Old Canberra Inn"></a>
+        <a class="brand footer-brand" href="index.html">
+          <img class="brand-logo" src="assets/logo.webp" alt="The Old Canberra Inn">
+        </a>
       </div>
-      <div class="footer-column"><h3>Explore</h3><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="events.html">Events</a><a href="booking.html">Bookings</a></div>
-      <div class="footer-column"><h3>Visit</h3><p>195 Mouat Street<br>Lyneham ACT 2602</p><a href="https://www.google.com/maps/search/?api=1&query=195+Mouat+Street+Lyneham+ACT+2602" target="_blank" rel="noopener">Get directions</a></div>
-      <div class="footer-column"><h3>Contact</h3><a href="tel:+61261346000">(02) 6134 6000</a><a href="mailto:manager@oldcanberrainn.com.au">manager@oldcanberrainn.com.au</a><p>Kitchen open daily from 12pm.</p></div>
-      <div class="footer-column footer-social" aria-label="Social links"><h3>Social</h3><a class="social-icon" href="https://www.instagram.com/theoldcanberrainn" target="_blank" rel="noopener" aria-label="The Old Canberra Inn on Instagram"><img src="assets/instagram.svg" alt=""></a><a class="social-icon" href="https://www.facebook.com/theoldcanberrainn" target="_blank" rel="noopener" aria-label="The Old Canberra Inn on Facebook"><img src="assets/facebook.svg" alt=""></a></div>
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="booking.html">Bookings</a>
+      </div>
+      <div class="footer-column">
+        <h3>Visit</h3>
+        <p>195 Mouat Street<br>Lyneham ACT 2602</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=195+Mouat+Street+Lyneham+ACT+2602" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <a href="tel:+61261346000">(02) 6134 6000</a>
+        <a href="mailto:manager@oldcanberrainn.com.au">manager@oldcanberrainn.com.au</a>
+        <p>Kitchen open daily from 12pm.</p>
+      </div>
+      <div class="footer-column footer-social" aria-label="Social links">
+        <h3>Social</h3>
+        <a class="social-icon" href="https://www.instagram.com/theoldcanberrainn" target="_blank" rel="noopener" aria-label="The Old Canberra Inn on Instagram">
+          <img src="assets/instagram.svg" alt="">
+        </a>
+        <a class="social-icon" href="https://www.facebook.com/theoldcanberrainn" target="_blank" rel="noopener" aria-label="The Old Canberra Inn on Facebook">
+          <img src="assets/facebook.svg" alt="">
+        </a>
+      </div>
     </div>
   </footer>
   <script src="assets/js/script.js"></script>
