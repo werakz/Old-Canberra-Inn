@@ -5,9 +5,9 @@
   --paper-strong: #f1dfc1;
   --clay: #a8442d;
   --clay-dark: #743120;
-  --button-primary: #7b2f1f;
-  --button-primary-hover: #5f2418;
   --moss: #49614a;
+  --button-primary: #49614a;
+  --button-primary-hover: #344735;
   --gold: #c88939;
   --white: #fffaf1;
   --line: rgba(33, 25, 21, 0.16);
@@ -862,6 +862,16 @@ textarea {
   background: var(--white);
   border: 1px solid var(--line);
   padding: 1.25rem;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.booking-form > .button {
+  align-self: flex-start;
 }
 
 .form-grid {
